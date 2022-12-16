@@ -15,7 +15,7 @@ public class manager : MonoBehaviour
 
         foreach (boid boidi in boidTemp)
         {
-            Vector3 pos = boidi.transform.position + Random.insideUnitSphere * 10;
+            Vector3 pos = boidi.transform.position + Random.insideUnitSphere * 50;
             boidi.transform.position = pos;
             boidi.transform.forward = Random.insideUnitSphere;
             boidList.Add(boidi);
